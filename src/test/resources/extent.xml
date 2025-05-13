@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        <documentTitle>Advanced Extent Report</documentTitle>
+        <reportName>Automation Test Execution Report</reportName>
+        <testViewChartLocation>top</testViewChartLocation>
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('nav').css('background-color', '#1f1f1f');
+                    $('.brand-logo').css('color', '#ffcc00');
+                });
+            ]]>
+        </scripts>
+        <styles>
+            <![CDATA[
+                body {
+                    font-family: 'Arial', sans-serif;
+                }
+                .report-name {
+                    color: #ffcc00 !important;
+                }
+                .category {
+                    background-color: #1e88e5 !important;
+                    color: white !important;
+                }
+                .badge-default {
+                    background-color: #26a69a !important;
+                    color: white !important;
+                }
+                .badge-fail {
+                    background-color: #d32f2f !important;
+                }
+                .badge-pass {
+                    background-color: #388e3c !important;
+                }
+                .badge-skip {
+                    background-color: #ff9800 !important;
+                }
+                .step-fail {
+                    background-color: rgba(211, 47, 47, 0.2) !important;
+                }
+                .step-pass {
+                    background-color: rgba(56, 142, 60, 0.2) !important;
+                }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
